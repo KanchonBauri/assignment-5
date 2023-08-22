@@ -21,3 +21,19 @@ function handleClick(target) {
 
 
 }
+
+document.getElementById('my-btn').addEventListener('click', function () {
+    // console.log('hello');
+    const applyConfirm = document.getElementById("apply-confirm");
+    const inputItemString = applyConfirm.value ;
+    
+   if(inputItemString==="SELL200" && total>200){
+    const discountAmount = (total * 0.2).toFixed(2);
+    const newPrice =total - discountAmount; 
+   
+    document.getElementById("total").innerText = newPrice;  
+    document.getElementById("discount").innerText = discountAmount;
+   }
+    console.log(discount);
+
+})
