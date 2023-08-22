@@ -35,5 +35,6 @@ document.getElementById('my-btn').addEventListener('click', function () {
     document.getElementById("discount").innerText = discountAmount;
    }
     console.log(discount);
+    // kanchon
 
 })
